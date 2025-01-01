@@ -1,0 +1,70 @@
+{
+  "drinks": [
+    {
+      "name": "Kashmiri Chai",
+      "ingredients": {
+        "temp": "hot",
+        "syrup": "none",
+        "milk": "cow",
+        "blended": "no",
+        "spices": "cardamom, saffron",
+        "garnish": "pistachios, almonds"
+      }
+    },
+    {
+      "name": "Doodh Patti",
+      "ingredients": {
+        "temp": "hot",
+        "syrup": "none",
+        "milk": "cow",
+        "blended": "no",
+        "spices": "none",
+        "garnish": "none"
+      }
+    },
+    {
+      "name": "Karak Chai",
+      "ingredients": {
+        "temp": "hot",
+        "syrup": "none",
+        "milk": "cow",
+        "blended": "no",
+        "spices": "cardamom",
+        "garnish": "none"
+      }
+    },
+    {
+      "name": "Masala Chai",
+      "ingredients": {
+        "temp": "hot",
+        "syrup": "none",
+        "milk": "cow",
+        "blended": "no",
+        "spices": "cardamom, ginger, cinnamon, cloves",
+        "garnish": "none"
+      }
+    },
+    {
+      "name": "Elaichi Chai",
+      "ingredients": {
+        "temp": "hot",
+        "syrup": "none",
+        "milk": "cow",
+        "blended": "no",
+        "spices": "cardamom",
+        "garnish": "none"
+      }
+    },
+    {
+      "name": "Noon Chai",
+      "ingredients": {
+        "temp": "hot",
+        "syrup": "none",
+        "milk": "cow",
+        "blended": "no",
+        "spices": "salt, baking soda",
+        "garnish": "none"
+      }
+    }
+  ]
+}
