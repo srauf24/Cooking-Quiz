@@ -1,6 +1,6 @@
 /* Base Styles */
 .App {
-  text-align: center;
+  text-align: left;
   background-color: #f5e0c3; /* Warm beige background for a cozy look */
   font-family: 'Pacifico', Arial, sans-serif; /* Fun, decorative font */
   color: #2d3748; /* Dark text for contrast */
@@ -12,7 +12,25 @@
   margin: 0;
   padding: 0;
 }
+/* Button Styles */
+.button {
+  background-color: #6b390b; /* Deep brown background */
+  color: #ffffff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
+.button:hover {
+  background-color: #8c4b0f; /* Slightly lighter brown on hover */
+}
+
+.submit {
+  margin-top: 10px; /* Add some space above the button */
+}
 /* Header */
 .App-header {
   background-color: #ffffff; /* Soft yellow to match the Butter Chicken theme */
