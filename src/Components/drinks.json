@@ -7,8 +7,8 @@
         "syrup": "none",
         "milk": "cow",
         "blended": "no",
-        "spices": "cardamom, saffron",
-        "garnish": "pistachios, almonds"
+        "spices": "cardamom",
+        "garnish": "pistachios"
       }
     },
     {
@@ -40,18 +40,7 @@
         "syrup": "none",
         "milk": "cow",
         "blended": "no",
-        "spices": "cardamom, ginger, cinnamon, cloves",
-        "garnish": "none"
-      }
-    },
-    {
-      "name": "Elaichi Chai",
-      "ingredients": {
-        "temp": "hot",
-        "syrup": "none",
-        "milk": "cow",
-        "blended": "no",
-        "spices": "cardamom",
+        "spices": "ginger",
         "garnish": "none"
       }
     },
@@ -62,7 +51,18 @@
         "syrup": "none",
         "milk": "cow",
         "blended": "no",
-        "spices": "salt, baking soda",
+        "spices": "salt",
+        "garnish": "none"
+      }
+    },
+    {
+      "name": "Lassi",
+      "ingredients": {
+        "temp": "cold",
+        "syrup": "none",
+        "milk": "yogurt",
+        "blended": "yes",
+        "spices": "none",
         "garnish": "none"
       }
     }
