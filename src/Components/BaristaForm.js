@@ -3,26 +3,8 @@ import drinksJson from "./drinks.json";
 import RecipeChoices from "./RecipeChoices";
 
 const BaristaForm = () => {
-    const [inputs, setInputs] = useState({
-            temp: '',
-            syrup: '',
-            milk: '',
-            blended: '',
-            spices: '',
-            garnish: ''
-    });
-
-    const [trueRecipe, setTrueRecipe] = useState({
-        ingredients: {
-            temp: '',
-            syrup: '',
-            milk: '',
-            blended: '',
-            spices: '',
-            garnish: ''
-        }
-    });
-
+    const [inputs, setInputs] = useState({});
+    const [trueRecipe, setTrueRecipe] = useState({});
     const [currentDrink, setCurrentDrink] = useState('');
 
     const ingredients = {
