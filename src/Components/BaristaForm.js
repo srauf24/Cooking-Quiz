@@ -4,10 +4,12 @@ import RecipeChoices from "./RecipeChoices";
 
 const BaristaForm = () => {
     const [inputs, setInputs] = useState({
-        'Base': '',
-        'Sweetener': '',
-        'Spices': '',
-        'Serving Style': ''
+            temp: '',
+            syrup: '',
+            milk: '',
+            blended: '',
+            spices: '',
+            garnish: ''
     });
 
     const [trueRecipe, setTrueRecipe] = useState({
@@ -24,15 +26,12 @@ const BaristaForm = () => {
     const [currentDrink, setCurrentDrink] = useState('');
 
     const ingredients = {
-        'Base': [
-            'Whole Milk',
-            'Almond Milk',
-            'Oat Milk',
-            'Water',
-            'Half Milk & Half Water',
-            'Coconut Milk'
+        'temp': [
+            'Hot',
+            'Cold',
+            'Room Temperature'
         ],
-        'Sweetener': [
+        'syrup': [
             'Sugar (white)',
             'Sugar (brown)',
             'Jaggery',
@@ -40,7 +39,19 @@ const BaristaForm = () => {
             'None',
             'Maple Syrup'
         ],
-        'Spices': [
+        'milk': [
+            'Whole Milk',
+            'Almond Milk',
+            'Oat Milk',
+            'Water',
+            'Half Milk & Half Water',
+            'Coconut Milk'
+        ],
+        'blended': [
+            'Yes',
+            'No'
+        ],
+        'spices': [
             'Cardamom',
             'Ginger',
             'Cinnamon',
@@ -48,15 +59,13 @@ const BaristaForm = () => {
             'Saffron',
             'Nutmeg'
         ],
-        'Serving Style': [
-            'Hot',
-            'Iced',
-            'Extra Frothy',
-            'Traditional (clay cup)',
+        'garnish': [
             'With Garnish (nuts, pistachios, etc.)',
-            'With Whip cream'
+            'With Whip cream',
+            'None'
         ]
     };
+
 
     const onCheckAnswer = () => {
         // Logic for checking the answer
@@ -64,10 +73,12 @@ const BaristaForm = () => {
 
     const onNewDrink = () => {
         setInputs({
-            'Base': '',
-            'Sweetener': '',
-            'Spices': '',
-            'Serving Style': ''
+            temp: '',
+            syrup: '',
+            milk: '',
+            blended: '',
+            spices: '',
+            garnish: ''
         });
         getNextDrink();
     };
@@ -100,9 +111,9 @@ const BaristaForm = () => {
                         ...prevState,
                         [e.target.name]: e.target.value,
                     }))}
-                    label="temperature"
-                    choices={ingredients["temperature"]}
-                    checked={inputs["temperature"]}
+                    label="temp"
+                    choices={ingredients["temp"]}
+                    checked={inputs["temp"]}
                 />
                 {/* Form content goes here */}
             </form>

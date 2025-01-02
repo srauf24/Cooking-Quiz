@@ -3,7 +3,7 @@ import React from "react";
 const RecipeChoices = ({ handleChange, label, choices, checked }) => {
     return (
         <div>
-            <div className="checkboxes">
+            <div className="radio-buttons">
                 {choices &&
                     choices.map((choice) => (
                         <li key={choice}>
@@ -11,7 +11,7 @@ const RecipeChoices = ({ handleChange, label, choices, checked }) => {
                                 id={choice}
                                 value={choice}
                                 name={label}
-                                type="checkbox"
+                                type="radio"
                                 onChange={handleChange}
                                 checked={checked.includes(choice)}
                             />
