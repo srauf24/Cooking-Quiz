@@ -1,6 +1,6 @@
 import React from "react";
 
-const RecipeChoices = ({ handleChange, label, choices, checked }) => {
+const RecipeChoices = ({ handleChange, label, choices, checked = '' }) => {
     return (
         <div>
             <div className="radio-buttons">

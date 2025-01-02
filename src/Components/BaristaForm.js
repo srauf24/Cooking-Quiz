@@ -7,6 +7,13 @@ const BaristaForm = () => {
     const [trueRecipe, setTrueRecipe] = useState({});
     const [currentDrink, setCurrentDrink] = useState('');
 
+    const [checkedTemp, setCheckedTemp] = useState('');
+    const [checkedSyrup, setCheckedSyrup] = useState('');
+    const [checkedMilk, setCheckedMilk] = useState('');
+    const [checkedBlended, setCheckedBlended] = useState('');
+    const [checkedSpices, setCheckedSpices] = useState('');
+    const [checkedGarnish, setCheckedGarnish] = useState('');
+
     const ingredients = {
         'temp': [
             'Hot',
@@ -50,8 +57,42 @@ const BaristaForm = () => {
 
 
     const onCheckAnswer = () => {
-        // Logic for checking the answer
-    };
+    if (trueRecipe.temp !== inputs['temp']) {
+        setCheckedTemp('wrong');
+    } else {
+        setCheckedTemp('correct');
+    }
+
+    if (trueRecipe.syrup !== inputs['syrup']) {
+        setCheckedSyrup('wrong');
+    } else {
+        setCheckedSyrup('correct');
+    }
+
+    if (trueRecipe.milk !== inputs['milk']) {
+        setCheckedMilk('wrong');
+    } else {
+        setCheckedMilk('correct');
+    }
+
+    if (trueRecipe.blended !== inputs['blended']) {
+        setCheckedBlended('wrong');
+    } else {
+        setCheckedBlended('correct');
+    }
+
+    if (trueRecipe.spices !== inputs['spices']) {
+        setCheckedSpices('wrong');
+    } else {
+        setCheckedSpices('correct');
+    }
+
+    if (trueRecipe.garnish !== inputs['garnish']) {
+        setCheckedGarnish('wrong');
+    } else {
+        setCheckedGarnish('correct');
+    }
+};
 
     const onNewDrink = () => {
         setInputs({
@@ -62,6 +103,12 @@ const BaristaForm = () => {
             spices: '',
             garnish: ''
         });
+        setCheckedTemp('');
+        setCheckedSyrup('');
+        setCheckedMilk('');
+        setCheckedBlended('');
+        setCheckedSpices('');
+        setCheckedGarnish('');
         getNextDrink();
     };
 
