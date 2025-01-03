@@ -12,32 +12,76 @@
   margin: 0;
   padding: 20px;
 }
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h3, h2 {
+  font-family: 'Merriweather', serif;
+}
 
 /* Header */
 .title {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row; /* Align items horizontally */
+  align-items: center; /* Center items vertically */
   margin-bottom: 30px; /* Spacing between header and content */
+}
+.title h1 {
+  font-size: 3rem; /* Larger, bold font for a modern header */
+  color: #4a4a4a; /* Neutral dark gray for a clean, modern look */
+  font-weight: 700; /* Bolder font for emphasis */
+  margin: 0;
+  line-height: 1.2; /* Adjust line height for better spacing */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+}
+
+.title p {
+  font-size: 1.2rem; /* Slightly larger for better readability */
+  color: #6b390b; /* Subtle brown for thematic consistency */
+  margin-top: 10px; /* Space above the paragraph */
+  margin-bottom: 20px; /* Space below the paragraph */
+  line-height: 1.6; /* Improved spacing between lines */
+  text-align: center; /* Centered for balance */
+}
+.drink-container h2 {
+  font-size: 1.8rem; /* Slightly larger to highlight the drink name */
+  color: #2d3748; /* Darker gray for emphasis */
+  font-weight: 600; /* Semi-bold for better readability */
+  margin: 20px 0; /* Add space above and below */
+  letter-spacing: 0.5px; /* Slightly increased spacing for a modern feel */
 }
 
 .Chai {
-  height: 80px; /* Adjusted for a smaller header image */
+  height: 80px;
   width: auto;
-  margin-bottom: 10px;
+  margin-right: 10px;
+  border-radius: 50%; /* Circular shape */
+  border: 2px solid #6b390b; /* Subtle brown border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.Chai:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
 
 .title h1 {
   font-size: 2.5rem;
   color: #4a4a4a; /* Modern darker gray */
   margin: 0;
   font-weight: bold;
+  margin-top: 45px;
+  margin-bottom: 10px; /* Space between h1 and paragraph */
+
 }
 
 .title p {
   font-size: 1rem;
   color: #6b390b; /* Subtle brown text for the subtitle */
-  margin-top: 5px;
+  margin-top: 0;
 }
 
 /* Drink Title */
@@ -169,4 +213,35 @@
   .column {
     width: 100%;
   }
+}
+
+.audio-player {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.audio-button {
+  background-color: #6b390b; /* Deep brown */
+  color: #ffffff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.audio-button:hover {
+  background-color: #8c4b0f; /* Slightly lighter brown on hover */
+  transform: scale(1.05); /* Subtle enlargement on hover */
+}
+.column h3 {
+  font-size: 1.4rem; /* Slightly larger for clarity */
+  font-weight: 600; /* Bold for emphasis */
+  color: #6b390b; /* Brown to match the theme */
+  margin-bottom: 15px; /* Space below the header */
+  text-align: center; /* Centered for consistency */
+  letter-spacing: 0.8px; /* Subtle spacing for modern typography */
 }
