@@ -1,57 +1,122 @@
 /* Base Styles */
 .App {
-  text-align: left;
-  background-color: #f5e0c3; /* Warm beige background for a cozy look */
+  text-align: center;
+  background-color: #f5e0c3; /* Warm beige background */
   font-family: 'Pacifico', Arial, sans-serif; /* Fun, decorative font */
   color: #2d3748; /* Dark text for contrast */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; /* Align content to the top */
   align-items: center;
   margin: 0;
-  padding: 0;
+  padding: 20px;
 }
-/* Button Styles */
+
+/* Header */
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.Chai {
+  height: 100px;
+  width: auto;
+  margin-right: 15px;
+}
+
+.title h1 {
+  font-size: 2.5rem;
+  color: #6b390b;
+  margin: 0;
+}
+
+.title p {
+  font-size: 1rem;
+  color: #6b390b;
+  margin-top: 5px;
+}
+
+/* Form Layout */
+.container {
+  display: flex; /* Align categories in columns */
+  justify-content: space-evenly; /* Spread columns evenly */
+  align-items: flex-start;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  width: 100%;
+  max-width: 1200px; /* Limit maximum width */
+  margin: 20px auto;
+  gap: 20px; /* Add spacing between columns */
+}
+
+.column {
+  display: flex;
+  flex-direction: column; /* Vertical alignment for each column */
+  align-items: center;
+  flex: 1; /* Equal width for each column */
+  min-width: 150px; /* Prevent shrinking too small */
+  background-color: #ffffff; /* White background for clarity */
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.column h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #6b390b;
+  text-align: center;
+}
+
+.radio-buttons li {
+  margin: 5px 0;
+  list-style: none;
+  background-color: #fffdd0;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  width: 100%; /* Full width inside column */
+  text-align: left;
+}
+
+.radio-buttons input {
+  margin-right: 10px;
+}
+
+/* Buttons */
 .button {
-  background-color: #6b390b; /* Deep brown background */
-  color: #ffffff; /* White text */
+  background-color: #6b390b;
+  color: #ffffff;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 15px;
   font-size: 1rem;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: 20px;
 }
 
 .button:hover {
-  background-color: #8c4b0f; /* Slightly lighter brown on hover */
+  background-color: #8c4b0f;
 }
 
-.submit {
-  margin-top: 10px; /* Add some space above the button */
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack columns vertically on smaller screens */
+    gap: 10px;
+  }
+
+  .column {
+    width: 90%; /* Full width on mobile */
+  }
 }
-/* Header */
-.App-header {
-  background-color: #ffffff; /* Soft yellow to match the Butter Chicken theme */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.wrong {
+  background-color: rgb(219, 93, 93); /* Red for wrong */
 }
 
-.App-header h1 {
-  font-size: 2.5rem;
-  margin: 10px 0;
-  color: #6b390b; /* Deep brown for an earthy touch */
-}
-
-.App-header p {
-  font-size: 1rem;
-  color: #6b390b;
-}
-
-.Chai {
-  height: 150px; /* Adjust the height as needed */
-  width: auto; /* Maintain aspect ratio */
-  margin-right: 15px; /* Space between image and heading */
+.correct {
+  background-color: rgb(36, 128, 80); /* Purple for correct */
 }

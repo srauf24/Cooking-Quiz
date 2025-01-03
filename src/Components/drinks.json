@@ -3,67 +3,67 @@
     {
       "name": "Kashmiri Chai",
       "ingredients": {
-        "temp": "hot",
-        "syrup": "none",
-        "milk": "cow",
-        "blended": "no",
-        "spices": "cardamom",
-        "garnish": "pistachios"
+        "temp": "Hot",
+        "syrup": "None",
+        "milk": "Cow",
+        "blended": "No",
+        "spices": "Cardamom",
+        "garnish": "Pistachios"
       }
     },
     {
       "name": "Doodh Patti",
       "ingredients": {
-        "temp": "hot",
-        "syrup": "none",
-        "milk": "cow",
-        "blended": "no",
-        "spices": "none",
-        "garnish": "none"
+        "temp": "Hot",
+        "syrup": "None",
+        "milk": "Cow",
+        "blended": "No",
+        "spices": "None",
+        "garnish": "None"
       }
     },
     {
       "name": "Karak Chai",
       "ingredients": {
-        "temp": "hot",
-        "syrup": "none",
-        "milk": "cow",
-        "blended": "no",
-        "spices": "cardamom",
-        "garnish": "none"
+        "temp": "Hot",
+        "syrup": "None",
+        "milk": "Cow",
+        "blended": "No",
+        "spices": "Cardamom",
+        "garnish": "None"
       }
     },
     {
       "name": "Masala Chai",
       "ingredients": {
-        "temp": "hot",
-        "syrup": "none",
-        "milk": "cow",
-        "blended": "no",
-        "spices": "ginger",
-        "garnish": "none"
+        "temp": "Hot",
+        "syrup": "None",
+        "milk": "Cow",
+        "blended": "No",
+        "spices": "Ginger",
+        "garnish": "None"
       }
     },
     {
       "name": "Noon Chai",
       "ingredients": {
-        "temp": "hot",
-        "syrup": "none",
-        "milk": "cow",
-        "blended": "no",
-        "spices": "salt",
-        "garnish": "none"
+        "temp": "Hot",
+        "syrup": "None",
+        "milk": "Cow",
+        "blended": "No",
+        "spices": "Salt",
+        "garnish": "None"
       }
     },
     {
       "name": "Lassi",
       "ingredients": {
-        "temp": "cold",
-        "syrup": "none",
-        "milk": "yogurt",
-        "blended": "yes",
-        "spices": "none",
-        "garnish": "none"
+        "temp": "Cold",
+        "syrup": "None",
+        "milk": "Yogurt",
+        "blended": "Yes",
+        "spices": "None",
+        "garnish": "None"
       }
     }
   ]
